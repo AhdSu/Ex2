@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <p>
+    <a id="wcc" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="https://github.com/gazaskygeeks/women-crash-course">WCC</a>
+    </p>
+    <button onclick="getAttributes()">
+      Click here to get attributes value
+    </button>
+
+
+    <script>
+   
+
+       let btn =document.querySelector('#getAttributes')
+       let link=document.querySelector('a');
+       btn.addEventListener('click',getAttributes) 
+
+       function getAttributes(){
+        alert('hreflang = '+link.getAttribute('hreflang') + 
+        'rel = '+link.getAttribute('rel')  + 'target = '+link.getAttribute('target')
+        + 'type = ' + link.getAttribute('type')  + 'href = '  +  link.getAttribute('href'))
+     }
+
+
+     // function getAttributes()
+    //            {
+    //          let a = document.getElementById("wcc").href;
+    //          alert('The value of the href attribute of the link is : '+a);
+    //          let b = document.getElementById("wcc").hreflang;   
+    //          alert('The value of the hreflang attribute of the link is : '+b);
+    //          let c = document.getElementById("wcc").rel; 
+    //          alert('The value of the rel attribute of the link is : '+c);
+    //          let d = document.getElementById("wcc").target; 
+    //          alert('The value of the taget attribute of the link is : '+d);
+    //          let e = document.getElementById("wcc").type; 
+    //          alert('The value of the type attribute of the link is : '+e);  
+    //                                                                         }
+
+
+
+
+
+    </script>
+
+
+  </body>
+</html>
